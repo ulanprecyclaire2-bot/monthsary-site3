@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Game Room 💜💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>💜 Love Game Room 💙</h1>
+
+  <!-- 🔐 UNLOCK -->
+  <div class="card">
+    <h2>🔐 Enter to Unlock</h2>
+    <input id="nameInput" placeholder="Enter name...">
+    <button onclick="unlock()">Unlock 💖</button>
+    <p id="unlockMsg"></p>
+  </div>
+
+  <div id="gameArea" class="hidden">
+
+    <p id="typing"></p>
+
+    <!-- 📅 COUNTDOWN -->
+    <div class="card">
+      <h2>📅 Next Monthsary</h2>
+      <p id="countdown"></p>
+    </div>
+
+    <!-- 💖 WHY I LOVE YOU -->
+    <div class="card">
+      <h2>💖 Why I Love You</h2>
+      <button onclick="showReason()">Reveal 💜</button>
+      <p id="reasonBox"></p>
+    </div>
+
+    <!-- 🎡 SPIN WHEEL -->
+    <div class="card">
+      <h2>🎡 Spin the Love Wheel</h2>
+      <button onclick="spinWheel()">SPIN 💫</button>
+      <p id="wheelResult"></p>
+    </div>
+
+    <!-- 🎟️ SCRATCH -->
+    <div class="card">
+      <h2>🎟️ Scratch Card</h2>
+      <button onclick="scratch()">Scratch 💜</button>
+      <p id="scratchResult">██████████</p>
+    </div>
+
+    <!-- 🎁 GIFT -->
+    <div class="card">
+      <h2>🎁 Mystery Gift</h2>
+      <button onclick="openGift()">Open</button>
+      <p id="giftResult"></p>
+    </div>
+
+    <!-- 💬 CHAT -->
+    <div class="card">
+      <h2>💬 Mini Chat Game</h2>
+      <button onclick="chat()">Talk</button>
+      <p id="chatBox"></p>
+    </div>
+
+    <!-- 📸 SLIDESHOW -->
+    <div class="card">
+      <h2>📸 Memories</h2>
+      <img id="slide" src="photo1.jpg" width="200" style="border-radius:15px;">
+      <br>
+      <button onclick="nextSlide()">Next Memory 💙</button>
+    </div>
+
+    <!-- 🏆 POINTS -->
+    <div class="card">
+      <h2>🏆 Love Points</h2>
+      <button onclick="addPoint()">Earn Love 💜</button>
+      <p id="points">0</p>
+    </div>
+
+    <!-- 🎵 MUSIC -->
+    <div class="card">
+      <h2>🎵 Music</h2>
+      <button onclick="toggleMusic()">Play / Pause 💜</button>
+      <audio id="music" src="your-song.mp3"></audio>
+    </div>
+
+    <!-- 💌 LETTER -->
+    <div class="card">
+      <h2>💌 Love Letter</h2>
+      <button onclick="openLetter()">Open</button>
+      <p id="letter" class="hidden">
+        My babi 💜💙<br><br>
+        Thank you for 13 months of love, patience, and memories.<br><br>
+        You are my peace, my happiness, my home.<br><br>
+        I love you endlessly ❤️
+      </p>
+    </div>
+
+    <!-- 🎬 ENDING -->
+    <div class="card">
+      <h2>🎬 Final Scene</h2>
+      <button onclick="finalScene()">End Game</button>
+      <p id="finalMsg"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+  </html>
